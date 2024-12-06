@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #171717;
+  --foreground:  #ffffff;
+} 
+
+.prime-bg{
+  @apply bg-[#45b3e0] ;
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Fredoka", sans-serif;
+}
