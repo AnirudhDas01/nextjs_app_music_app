@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Fredoka } from 'next/font/google'
-import Navbar from '@/components/Navbar';
-const fredoka = Fredoka({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
+import { Roboto } from "next/font/google";
+import Navbar from "@/components/Navbar";
+
+const roboto = Roboto({
+  weight: ["100", "300", "400", "500", "700", "900"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -19,14 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${fredoka.className} antialiased`}>
-        <>
+      <body className={`${roboto.className} antialiased`}>
         <div className="relative w-full flex items-center justify-center">
-        <Navbar/>
-          
+          <Navbar />
         </div>
         {children}
-        </>
       </body>
     </html>
   );
