@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import { Spotlight } from "@/components/ui/Spotlight";
+import FeaturedCourses from "@/components/FeaturedCourses";
 export default function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Home() {
       />
       <HeroSection/>
     </main>
+    <FeaturedCourses/>
     </>
   );
 }
